@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assigment repo</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar bg-base-100 shadow-sm ">
+            <div class="flex-1">
+                <div class="flex gap-2">
+                    <img src="assets/logo.png" alt="">
+                    <h1 class="text-4xl pt-1 ">Dev<span class="font-bold text-black">Board</span></h1>
+                </div>
+                </div>
+                <div class="flex gap-16">
+                <div class="flex gap-2 shadow-lg bg-gray-200 rounded-2xl ">
+                <img class=" mx-auto w-10 " src="assets/checkbox.png" alt="">
+                <button id="plushButton" class="text-3xl"><span id="plashValue">23</span></button>
+                </div>
+                <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                    <div class="w-10 rounded-full bg-gray-50">
+                    <img class=""
+                        alt="Tailwind CSS Navbar component"
+                        src="assets/theme-btn.png" />
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        </nav>
+    </header>
+    <main>
+        <div  class="flex gap-5 pt-10 pb-5">
+
+            <div class="grid  ">
+                    <!-- card-1 -->
+                <div class="grid grid-cols-3 ">
+                    <div class="flex pt-10 gap-3 bg-gray-400 ">
+                        <div class="mx-auto flex gap-3 p-10 rounded-lg">
+                        <img class="w-10 h-10 bg-white " src="assets/checkbox.png" alt="">
+                            <div>
+                                <h1>Task Assigned</h1>
+                            <button id="mainasButton"><span id="mainasValue">6</span></button>
+                            </div>
+                        </div>
+                        </div>
+                    <!-- card-2 -->
+                    <div id="cardValue" class="flex cursor-pointer pt-10 gap-3 bg-red-300">
+                        <div class="mx-auto flex gap-3 p-10 ">
+                        <img class="w-10 h-10 " src="assets/board.png" alt="">
+                            <h1>Discover Something <br> New Today!</h1>
+                        </div>
+                        </div>
+                    <!-- card-3 -->
+
+
+                    <div class="flex pt-10 gap-3 bg-gray-400 ">
+                        <div class="mx-auto flex gap-3 p-10 rounded-lg">
+                        <img class="w-10 h-10 bg-white " src="assets/calender.png" alt="">
+                            <h1>Wed ,<br>
+                                Jul 28 2025 <br></h1>
+                        </div>
+                        </div>
+                </div>
+                <div class="grid grid-cols-3 pt-14  gap-7  ">
+                    <!-- card-box-1 -->
+                    <div class="bg-gray-300">
+                    <div class="pt-3 pl-4">
+                        <h4 class="text-black pl-5 pt-2 bg-white rounded-md w-36 h-10">ShopEase</h4>
+                    </div>
+                    <h1 class="pl-5 pt-4">Fix Mobile Button Issue</h1>
+                    <div class="pt-3 pl-4 pr-6">
+                        <p class="pl-5 pt-4 bg-white rounded-md">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly</p>
+                    </div>
+                    <p class="pl-5 pt-4">Deadline</p>
+                    <div class="flex gap-20 pb-4 pl-3  pr-1">
+                        <h2 class="pl-2 ">21 March 2025</h2>
+                    <button id="mainButton" class="btn btn-primary ">Completed</button>
+                    </div>
+                    </div>
+                    <!-- card-box-2 -->
+                    <div class="bg-gray-300">
+                    <div class="pt-3 pl-4">
+                        <h4 class="text-black pl-5 pt-2 bg-white rounded-md w-36 h-10">SwiftPay</h4>
+                    </div>
+                    <h1 class="pl-5 pt-4">Optimize  Home page</h1>
+                    <div class="pt-3 pl-4 pr-6">
+                        <p class="pl-5 pt-4 bg-white rounded-md">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick wo</p>
+                    </div>
+                    <p class="pl-5 pt-4">Deadline</p>
+                    <div class="flex gap-20 pb-4 pl-5 pt-4 pr-4">
+                        <h2 class=" ">21 March 2025</h2>
+                    <button id="mainButton1" class="btn btn-primary ">Completed</button>
+                    </div>
+                    </div>
+                    <!-- card-box-3 -->
+                    <div class="bg-gray-300">
+                    <div class="pt-3 pl-4">
+                        <h4 class="text-black pl-5 pt-2 bg-white rounded-md w-36 h-10">Meta</h4>
+                    </div>
+                    <h1 class="pl-5 pt-4">Add new emoji 🤲</h1>
+                    <div class="pt-3 pl-4 pr-6">
+                        <p class="pl-5 pt-4 bg-white rounded-md">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                    </div>
+                    <p class="pl-5 pt-4">Deadline</p>
+                    <div class="flex gap-20 pb-4 pl-5 pt-4 pr-4">
+                        <h2 class=" ">21 March 2025</h2>
+                    <button id="mainButton2" class="btn btn-primary ">Completed</button>
+                    </div>
+                    </div>
+                    <!-- card-box-4 -->
+                    <div class="bg-gray-300">
+                    <div class="pt-3 pl-4 ">
+                        <h4 class="text-black pl-5 pt-2 bg-white rounded-md w-36 h-8">Google LLC</h4>
+                    </div>
+                    <h1 class="pl-5 pt-4">Integrate OpenAI API </h1>
+                    <div class="pt-3 pl-4 pr-6">
+                        <p class="pl-5 pt-4 bg-white rounded-md">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                    </div>
+                    <p class="pl-5 pt-4">Deadline</p>
+                    <div class="flex gap-20 pb-4 pl-5 pt-4 pr-4">
+                        <h2 class=" ">21 March 2025</h2>
+                    <button id="mainButton3" class="btn btn-primary ">Completed</button>
+                    </div>
+                    </div>
+                    <!-- card-box-5 -->
+                    <div class="bg-gray-300">
+                    <div  class="pt-3 pl-4 ">
+                        <h4 class="text-black pl-5 pt-2 bg-white rounded-md w-36 h-10">Google LLC</h4>
+                    </div>
+                    <h1 class="pl-5 pt-4">Integrate OpenAI API </h1>
+                    <div  class="pt-3 pl-4 pr-6">
+                        <p class="pl-5 pt-4 bg-white rounded-md">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                    </div>
+                    <p class="pl-5 pt-4">Deadline</p>
+                    <div class="flex gap-20 pb-4 pl-5 pt-4 pr-4">
+                        <h2 class=" ">21 March 2025</h2>
+                    <button id="mainButton4" class="btn btn-primary ">Completed</button>
+                    </div>
+                    </div>
+                    <!-- card-box-6 -->
+                    <div class="bg-gray-300">
+                    <div class="pt-3 pl-4 ">
+                        <h4 class="text-black pl-5 pt-2 bg-white rounded-md w-36 h-10">Glassdoar</h4>
+                    </div>
+                    <h1 class="pl-5 pt-4">Improve Job searching</h1>
+                    <div class="pt-3 pl-4 pr-6">
+                        <p class="pl-5 pt-4 bg-white rounded-md">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                    </div>
+                    <p class="pl-5 pt-4">Deadline</p>
+                    <div class="flex gap-20 pb-4 pl-5 pt-4 pr-4">
+                        <h2 class=" ">21 March 2025</h2>
+                    <button id="mainButton5" class="btn btn-primary ">Completed</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Active box --> 
+            <div class="grid  shadow-lg bg-slate-50 w-10/12 text-center ">
+                <div>
+                    <div class="pt-10">
+                        <div class="flex ">
+                        <div class="mx-auto flex gap-3 pb-4">
+                            <img src="assets/activity.png" alt="">
+                        
+                        <h2>Activity Log</h2>
+                    </div>
+                        </div>
+                        <button class="btn btn-primary border-b-2" >Clear History</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script/script.js"></script>
+    
+</body>
+</html>
