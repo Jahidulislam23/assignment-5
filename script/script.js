@@ -7,7 +7,7 @@ document.getElementById('mainButton').addEventListener('click',function(){
     let mainasValue =parseInt(mainasButton.innerText);
 
     if(mainasValue -6 ===0){
-        alert('Warning! Decrease value has reached 0.')
+        alert('Board Updated successfully')
     }
     if(mainasValue > 0){
         plashButton.innerText = plashValue +1;
@@ -25,7 +25,7 @@ document.getElementById('mainButton1').addEventListener('click',function(){
     let mainasValue =parseInt(mainasButton.innerText);
 
     if(mainasValue -5 ===0){
-        alert('Warning! Decrease value has reached 0.')
+        alert('Board Updated successfully')
 
     }
 
@@ -46,7 +46,7 @@ document.getElementById('mainButton2').addEventListener('click',function(){
     let mainasValue =parseInt(mainasButton.innerText);
 
     if(mainasValue -4 ===0){
-        alert('Warning! Decrease value has reached 0.')
+        alert('Board Updated successfully')
 
     }
 
@@ -67,7 +67,7 @@ document.getElementById('mainButton3').addEventListener('click',function(){
     let mainasValue =parseInt(mainasButton.innerText);
 
     if(mainasValue -3 ===0){
-        alert('Warning! Decrease value has reached 0.')
+        alert('Board Updated successfully')
 
     }
 
@@ -88,7 +88,7 @@ document.getElementById('mainButton4').addEventListener('click',function(){
     let mainasValue =parseInt(mainasButton.innerText);
 
     if(mainasValue -2 ===0){
-        alert('Warning! Decrease value has reached 0.')
+        alert('Board Updated successfully')
 
     }
 
@@ -109,7 +109,11 @@ document.getElementById('mainButton5').addEventListener('click',function(){
     let mainasValue =parseInt(mainasButton.innerText);
 
     if(mainasValue -1 ===0){
-        alert('Warning! Decrease value has reached 0.')
+        alert('Board Updated successfully')
+
+    }
+    if(mainasValue -1 ===0){
+        alert('congrates!!! You have completed all current task')
 
     }
 
@@ -124,3 +128,8 @@ document.getElementById('mainButton5').addEventListener('click',function(){
 document.getElementById('cardValue').addEventListener('click',function(){
     window.location.href='./main.html'
 })
+
+function changeBackgroundColor() {
+    const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+    document.body.style.backgroundColor = randomColor;
+}

@@ -1,51 +1,5 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multiple Buttons</title>
-</head>
-<body>
 
-    <div>
-        <button class="mainButton">Click Me</button>
-        <button class="increaseButton">Increase: <span class="increaseValue">0</span></button>
-        <button class="decreaseButton">Decrease: <span class="decreaseValue">10</span></button>
-    </div>
 
-    <div>
-        <button class="mainButton">Click Me</button>
-        <button class="increaseButton">Increase: <span class="increaseValue">0</span></button>
-        <button class="decreaseButton">Decrease: <span class="decreaseValue">10</span></button>
-    </div>
-
-    <script>
-        // সব "Click Me" বাটনে ইভেন্ট লিসেনার যোগ করা
-        document.querySelectorAll(".mainButton").forEach((button, index) => {
-            button.addEventListener("click", function() {
-                let parentDiv = button.parentElement;
-                let increaseElement = parentDiv.querySelector(".increaseValue");
-                let decreaseElement = parentDiv.querySelector(".decreaseValue");
-
-                let increaseValue = parseInt(increaseElement.innerText);
-                let decreaseValue = parseInt(decreaseElement.innerText);
-
-                // Increase one value and decrease the other
-                if (decreaseValue > 0) {
-                    increaseElement.innerText = increaseValue + 1;
-                    decreaseElement.innerText = decreaseValue - 1;
-                }
-
-                // Show alert when decreaseValue reaches 0
-                if (decreaseValue - 1 === 0) {
-                    alert("Warning! Decrease value has reached 0.");
-                }
-            });
-        });
-    </script>
-
-</body>
-</html>
 
 
