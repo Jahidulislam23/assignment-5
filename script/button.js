@@ -1,3 +1,3 @@
-document.getElementById('goToFirstPage').addEventListener('click',function(){
+document.getElementById('cardValue').addEventListener('click',function(){
     window.location.href='./index1.html'
-});
+})
