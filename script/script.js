@@ -21,7 +21,7 @@ document.getElementById('mainButton').addEventListener('click',function(){
 
     const h1 =document.createElement('h1');
     h1.innerText=`
-    you have completed the task${'Fix Mobile Button Issue'} from ${'4:50:10 AM'} value
+    you have completed the task${'Fix Mobile Button Issue'} from ${'4:50:10 AM'} 
     `
     container.appendChild(h1)
 
@@ -53,7 +53,7 @@ document.getElementById('mainButton1').addEventListener('click',function(){
 
     const h1 =document.createElement('h1');
     h1.innerText=`
-    you have completed the task${'Optimize  Home page'} from ${'4:50:10 AM'} value
+    you have completed the task${'Add Dark Mode'} from ${'4:50:10 AM'}
     `
     container.appendChild(h1)
     
@@ -82,7 +82,7 @@ document.getElementById('mainButton2').addEventListener('click',function(){
 
     const h1 =document.createElement('h1');
     h1.innerText=`
-    you have completed the task${'Add new emoji 🤲'} from ${'4:50:10 AM'} value
+    you have completed the task${'Optimize  Home page'} from ${'4:50:10 AM'}
     `
     container.appendChild(h1)
     
@@ -110,7 +110,7 @@ document.getElementById('mainButton3').addEventListener('click',function(){
 
     const h1 =document.createElement('h1');
     h1.innerText=`
-    you have completed the task${'Integrate OpenAI API '} from ${'4:50:10 AM'} value
+    you have completed the task${'Add new emoji 🤲 '} from ${'4:50:10 AM'}
     `
     container.appendChild(h1)
     
@@ -138,7 +138,7 @@ document.getElementById('mainButton4').addEventListener('click',function(){
 
     const h1 =document.createElement('h1');
     h1.innerText=`
-    you have completed the task${'Improve Job searching'} from ${'4:50:10 AM'} value
+    you have completed the task${'Integrate OpenAI API '} from ${'4:50:10 AM'} 
     `
     container.appendChild(h1)
     
@@ -170,7 +170,7 @@ document.getElementById('mainButton5').addEventListener('click',function(){
 
     const h1 =document.createElement('h1');
     h1.innerText=`
-    you have completed the task${'Fix Mobile Button Issue'} from ${'4:50:10 AM'} 
+    you have completed the task${'Improve Job searching'} from ${'4:50:10 AM'} 
     `
     container.appendChild(h1)
     
@@ -185,6 +185,4 @@ function changeBackgroundColor() {
     document.body.style.backgroundColor = randomColor;
 }
 
-document.getElementById('clearAll').addEventListener('click',function(){
-    
-})
+

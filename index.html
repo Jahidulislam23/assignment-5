@@ -14,7 +14,7 @@
 
     </style>
 </head>
-<body>
+<body class="max-w-[1400] mx-auto">
     <header class="pt-6 ">
         <nav>
             <div class="navbar bg-base-100 shadow-sm pl-6 ">
@@ -41,7 +41,7 @@
     <main>
         <div  class="flex gap-5 pt-10 pb-5">
 
-            <div class="grid">
+            <div class="grid bg-slate-100 rounded-lg">
                     <!-- card-1 -->
                 <div class="grid grid-cols-12 gap-5 ">
                     <div class="flex pt-10 gap-3 bg-gray-400 col-span-3 rounded-lg">
@@ -66,7 +66,7 @@
                     <div id="dateButton" class="flex cursor-pointer pt-10 gap-3 bg-gray-400 col-span-3 rounded-lg">
                         <div class="mx-auto flex gap-3 p-10 rounded-lg ">
                         <img class="w-14 h-14 bg-white " src="assets/calender.png" alt="">
-                            <h1 class="text-1xl">Wed ,<br><span class="font-bold text-2xl">Jul 28 2025</span><br></h1>
+                            <h1 id="dateDisplay"  onClick="showDate" class="text-1xl">Wed ,<br><span class="font-bold text-2xl">Jul 28 2025</span><br></h1>
                         </div>
                         </div>
                 </div>
@@ -82,7 +82,7 @@
                         and ensure onClick works properly</p>
                     </div>
                     <p class="pl-5 pt-4">Deadline</p>
-                    <div class="flex gap-52 pb-4 pl-3  pr-4 pt-4">
+                    <div class="flex justify-between pb-4 pl-3  pr-4 pt-4">
                         <h2 class="pl-2 ">21 March 2025</h2>
                     <button id="mainButton" class="btn btn-primary ">Completed</button>
                     </div>
@@ -92,13 +92,13 @@
                     <div class="pt-3 pl-4">
                         <h4 class="text-black pl-5 pt-2 bg-white rounded-md w-36 h-10">SwiftPay</h4>
                     </div>
-                    <h1 class="pl-5 pt-4">Optimize  Home page</h1>
+                    <h1 class="pl-5 pt-4">Add Dark Mode</h1>
                     <div class="pt-3 pl-4 pr-6">
                         <p class="pl-5 pt-4 bg-white rounded-md">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                         and ensure onClick wo</p>
                     </div>
                     <p class="pl-5 pt-4">Deadline</p>
-                    <div class="flex gap-52 pb-4 pl-5 pt-4 pr-4">
+                    <div class="flex justify-between pb-4 pl-5 pt-4 pr-4">
                         <h2 class=" ">21 March 2025</h2>
                     <button id="mainButton1" class="btn btn-primary ">Completed</button>
                     </div>
@@ -108,12 +108,12 @@
                     <div class="pt-3 pl-4">
                         <h4 class="text-black pl-5 pt-2 bg-white rounded-md w-36 h-10">Meta</h4>
                     </div>
-                    <h1 class="pl-5 pt-4">Add new emoji 🤲</h1>
+                    <h1 class="pl-5 pt-4">Optimize  Home page</h1>
                     <div class="pt-3 pl-4 pr-6">
                         <p class="pl-5 pt-4 bg-white rounded-md">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
                     </div>
                     <p class="pl-5 pt-4">Deadline</p>
-                    <div class="flex gap-52 pb-4 pl-5 pt-4 pr-4">
+                    <div class="flex justify-between pb-4 pl-5 pt-4 pr-4">
                         <h2 class=" ">21 March 2025</h2>
                     <button id="mainButton2" class="btn btn-primary ">Completed</button>
                     </div>
@@ -123,12 +123,12 @@
                     <div class="pt-3 pl-4 ">
                         <h4 class="text-black pl-5 pt-2 bg-white rounded-md w-36 h-8">Google LLC</h4>
                     </div>
-                    <h1 class="pl-5 pt-4">Integrate OpenAI API </h1>
+                    <h1 class="pl-5 pt-4">Add new emoji 🤲</h1>
                     <div class="pt-3 pl-4 pr-6">
                         <p class="pl-5 pt-4 bg-white rounded-md">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
                     </div>
                     <p class="pl-5 pt-4">Deadline</p>
-                    <div class="flex gap-52 pb-4 pl-5 pt-4 pr-4">
+                    <div class="flex justify-between pb-4 pl-5 pt-4 pr-4">
                         <h2 class=" ">21 March 2025</h2>
                     <button id="mainButton3" class="btn btn-primary ">Completed</button>
                     </div>
@@ -138,12 +138,12 @@
                     <div  class="pt-3 pl-4 ">
                         <h4 class="text-black pl-5 pt-2 bg-white rounded-md w-36 h-10">Google LLC</h4>
                     </div>
-                    <h1 class="pl-5 pt-4">Integrate OpenAI API </h1>
+                    <h1 class="pl-5 pt-4">Integrate OpenAI API  </h1>
                     <div  class="pt-3 pl-4 pr-6">
                         <p class="pl-5 pt-4 bg-white rounded-md">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
                     </div>
                     <p class="pl-5 pt-4">Deadline</p>
-                    <div class="flex gap-52 pb-4 pl-5 pt-4 pr-4">
+                    <div class="flex justify-between pb-4 pl-5 pt-4 pr-4">
                         <h2 class=" ">21 March 2025</h2>
                     <button id="mainButton4" class="btn btn-primary ">Completed</button>
                     </div>
@@ -166,7 +166,7 @@
                 </div>
             </div>
             <!-- Active box --> 
-            <div id="right-btn" class="grid  shadow-lg bg-slate-50 w-7/12 text-center ">
+            <div id="right-btn" class="  shadow-lg bg-slate-50 w-7/12 text-center rounded-lg">
                 <div>
                     <div class="pt-10">
                         <div class="flex ">
