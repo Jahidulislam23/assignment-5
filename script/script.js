@@ -181,7 +181,7 @@ document.getElementById('mainButton5').addEventListener('click',function(){
     
 })
 document.getElementById('goToFirstPage').addEventListener('click',function(){
-    window.location.href='./index.html'
+    window.location.href='./index1.html'
 });
 
 
