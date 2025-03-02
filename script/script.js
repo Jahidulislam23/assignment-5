@@ -6,6 +6,8 @@ document.getElementById('mainButton').addEventListener('click',function(){
     let plashValue = parseInt(plashButton.innerText);
     let mainasValue =parseInt(mainasButton.innerText);
 
+    let fontName = parseInt('fix-mobile')
+
     if(mainasValue -6 ===0){
         alert('Board Updated successfully')
     }
@@ -14,27 +16,18 @@ document.getElementById('mainButton').addEventListener('click',function(){
         mainasButton.innerText= mainasValue -1;
     }
     mainButton.disabled = true;
-    let now = new Date();
-    let formattedTime = now.toLocaleString('right-btn',{
-        hour:'2-digit',
-        minute:'2-digit',
-        second:'2-digit',
-        hour12:true
 
-    });
-    let task = document.getElementById('fix-mobile');
-    let taskName = task.innerText;
-    let activeLogs = document.getElementById('active-logs');
-    let newParagraph = document.createElement('h1');
-    newParagraph.classList.add(
-        'p-4',
-        'bg-[#f4f7ff]',
-        'rounded-lg',
-        'shadow-md','text-gray-500','font-medium','mt-2',
-        'mr-2'
-    );
-    newParagraph.innerText=`your have complete the task ${taskName}at ${formattedTime}`;
-    activeLogs.appendChild(newParagraph);
+    const container = document.getElementById('right-btn')
+
+    const h1 =document.createElement('h1');
+    h1.innerText=`
+    you have completed the task${'Fix Mobile Button Issue'} from ${'4:50:10 AM'} value
+    `
+    container.appendChild(h1)
+
+
+
+    
     
 });
 
@@ -56,6 +49,13 @@ document.getElementById('mainButton1').addEventListener('click',function(){
         mainasButton.innerText= mainasValue -1;
     }
     mainButton1.disabled = true;
+    const container = document.getElementById('right-btn')
+
+    const h1 =document.createElement('h1');
+    h1.innerText=`
+    you have completed the task${'Optimize  Home page'} from ${'4:50:10 AM'} value
+    `
+    container.appendChild(h1)
     
 })
 
@@ -77,6 +77,14 @@ document.getElementById('mainButton2').addEventListener('click',function(){
         mainasButton.innerText= mainasValue -1;
     }
     mainButton2.disabled = true;
+
+    const container = document.getElementById('right-btn')
+
+    const h1 =document.createElement('h1');
+    h1.innerText=`
+    you have completed the task${'Add new emoji 🤲'} from ${'4:50:10 AM'} value
+    `
+    container.appendChild(h1)
     
 })
 
@@ -98,6 +106,13 @@ document.getElementById('mainButton3').addEventListener('click',function(){
         mainasButton.innerText= mainasValue -1;
     }
     mainButton3.disabled = true;
+    const container = document.getElementById('right-btn')
+
+    const h1 =document.createElement('h1');
+    h1.innerText=`
+    you have completed the task${'Integrate OpenAI API '} from ${'4:50:10 AM'} value
+    `
+    container.appendChild(h1)
     
 })
 
@@ -119,6 +134,13 @@ document.getElementById('mainButton4').addEventListener('click',function(){
         mainasButton.innerText= mainasValue -1;
     }
     mainButton4.disabled = true;
+    const container = document.getElementById('right-btn')
+
+    const h1 =document.createElement('h1');
+    h1.innerText=`
+    you have completed the task${'Improve Job searching'} from ${'4:50:10 AM'} value
+    `
+    container.appendChild(h1)
     
 })
 
@@ -144,6 +166,13 @@ document.getElementById('mainButton5').addEventListener('click',function(){
         mainasButton.innerText= mainasValue -1;
     }
     mainButton5.disabled = true;
+    const container = document.getElementById('right-btn')
+
+    const h1 =document.createElement('h1');
+    h1.innerText=`
+    you have completed the task${'Fix Mobile Button Issue'} from ${'4:50:10 AM'} 
+    `
+    container.appendChild(h1)
     
 })
 document.getElementById('cardValue').addEventListener('click',function(){
@@ -155,3 +184,7 @@ function changeBackgroundColor() {
     const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
     document.body.style.backgroundColor = randomColor;
 }
+
+document.getElementById('clearAll').addEventListener('click',function(){
+    
+})
