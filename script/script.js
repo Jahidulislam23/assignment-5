@@ -38,40 +38,6 @@ document.getElementById('mainButton').addEventListener('click',function(){
     
 });
 
-// const mainButton = document.getElementById('mainButton');
-// const rightButton = document.getElementById('right-btn');
-// const divTag = document.getElementsByTagName('div')
-
-// const divTagName = document.getElementById('mainasButton');
-// const navber =document.getElementById('plushButton');
-
-// const buttons = document.querySelectorAll('.btn');
-
-// console.log(buttons);
-// console.log(divTag);
-
-// for(let singleTag of divTag){
-//     const btn = singleTag.querySelector('button');
-//     btn.addEventListener('click',()=>{
-//         const p =document.createElement('p');
-//         const divText = singleTag.querySelector('p').textContent;
-//         p.innerText=divText;
-//         alert('task added');
-//         rightButton.appendChild(p);
-//         btn.setAttribute('disabled'.true);
-//         let currentCount =parseInt(navber.innerText);
-//         let updatedCount = currentCount-1;
-//         let currentCountPlash =parseInt(divTagName.innerText);
-//         let updatedCountplash = currentCountPlash+1
-//     })
-// }
-
-
-
-
-
-
-
 document.getElementById('mainButton1').addEventListener('click',function(){
     
     let plashButton = document.getElementById('plashValue');
@@ -180,7 +146,7 @@ document.getElementById('mainButton5').addEventListener('click',function(){
     mainButton5.disabled = true;
     
 })
-document.getElementById('goToFirstPage').addEventListener('click',function(){
+document.getElementById('cardValue').addEventListener('click',function(){
     window.location.href='./index1.html'
 });
 

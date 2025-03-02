@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>assigment repo</title>
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -15,176 +15,69 @@
     </style>
 </head>
 <body>
-    <header class="pt-6 ">
+    <header>
         <nav>
-            <div class="navbar bg-base-100 shadow-sm pl-6 ">
-            <div class="flex-1">
-                <div class="flex gap-2">
-                    <img src="assets/logo.png" alt="">
-                    <h1 class="text-4xl pt-1 ">Dev<span class="font-bold text-black">Board</span></h1>
+          <div class="navbar bg-base-100 shadow-sm">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
                 </div>
-                </div>
-                <div class="flex gap-16">
-                <div class="flex gap-2 shadow-lg bg-gray-200 rounded-2xl ">
-                <img class=" mx-auto w-10 " src="assets/checkbox.png" alt="click Me">
-                <button id="plushButton" class="text-3xl"><span id="plashValue">23</span></button>
-                </div>
-                <div class="dropdown dropdown-end">
-                <div>
-                    <img class=" mx-auto w-10 " src="assets/theme-btn.png" alt="click Me" onclick="changeBackgroundColor()">
-                </div>
-                </div>
+              </div>
+              <div class="flex gap-2">
+                <img src="assets/logo.png" alt="">
+                <h1 class="text-4xl pt-1 ">Dev<span class="font-bold text-black">Board</span></h1>
             </div>
-        </div>
+            </div>
+            <div  class="navbar-end">
+              <button  id="goToFirstPage" class="btn btn-primary ">Back to Desk</button>
+            </div>
+          </div>
         </nav>
+        <main>
+          <div class="text-center pt-9 font-bold text-3xl pb-10">
+            <h1>Blogs</h1>
+          </div>
+
+          <div class="bg-gray-200 ">
+            <div class="pl-4 pt-3 pb-5 ">
+              <div class="pb-5">
+                <h1 class="text-black pl-5 pt-2 bg-white rounded-md w-2/5 h-10 ">Question-1: What are the different ways to select an element in the DOM?</h1>
+              </div>
+                <h2 class="text-black pl-5 pt-2 bg-white rounded-md w-4/5 h-10">Ans: In JavaScript, there are several ways to select an element in the DOM. Here are the most commonly used methods,getElementById,getElementsByClassName</h2>
+            </div>
+            <div class="pl-4 pt-3 pb-5 ">
+              <div class="pb-5">
+                <h1  class="text-black pl-5 pt-2 bg-white rounded-md w-2/5 h-10 ">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+              </div>
+                <h2  class="text-black pl-5 pt-2 bg-white rounded-md w-4/5 h-10">Ans: These three properties are used to retrieve or set the content of an HTML element, but they behave differently in terms of handling HTML tags, whitespace, and hidden elements</h2>
+            </div>
+            <div class="pl-4 pt-3 pb-5 ">
+              <div class="pb-5">
+                <h1 class="text-black pl-5 pt-2 bg-white rounded-md w-1/5 h-10 ">Question-3: What is event delegation in the DOM?</h1>
+              </div>
+                <h2 class="text-black pl-5 pt-2 bg-white rounded-md w-5/5 h-10">Event Delegation is a technique in JavaScript where a parent element listens for events on its child elements, even if those child elements are added dynamically. This is possible because of event bubbling—events travel from the target element up to the DOM tree.</h2>
+            </div>
+            <div  class="pl-4 pt-3 pb-5 ">
+              <div class="pb-5">
+                <h1  class="text-black pl-5 pt-2 bg-white rounded-md w-1/5 h-10 ">Question-4: What is event bubbling in the DOM?</h1>
+              </div>
+                <h2 class="text-black pl-5 pt-2 bg-white rounded-md w-4/5 h-10 ">Event bubbling is a mechanism in the DOM where an event starts from the target element and propagates (bubbles) up to its parent elements, all the way to the root (document).</h2>
+            </div>
+            <div class="pl-4 pt-3 pb-5 ">
+              <div class="pb-5">
+                <h1 class="text-black pl-5 pt-2 bg-white rounded-md w-2/5 h-10 ">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+              </div>
+                <h2  class="text-black pl-5 pt-2 bg-white rounded-md w-4/5 h-10 ">JavaScript provides various methods to dynamically create, add, and remove elements from the DOM.</h2>
+            </div>
+          </div>
+        </main>
     </header>
-    <main>
-        <div  class="flex gap-5 pt-10 pb-5">
-
-            <div class="grid">
-                    <!-- card-1 -->
-                <div class="grid grid-cols-12 gap-5 ">
-                    <div class="flex pt-10 gap-3 bg-gray-400 col-span-3 rounded-lg">
-                        <div class="mx-auto flex gap-3 p-10 rounded-lg">
-                        <img class="w-10 h-10 bg-white " src="assets/checkbox.png" alt="">
-                            <div>
-                                <h1>Task Assigned</h1>
-                            <button id="mainasButton"><span id="mainasValue">6</span></button>
-                            </div>
-                        </div>
-                        </div>
-                    <!-- card-2 -->
-                    <div id="cardValue" class="flex cursor-pointer pt-10 gap-3 bg-red-300 col-span-6 rounded-lg">
-                        <div class="mx-auto flex gap-3 p-10 ">
-                        <img class=" h-28 w-28 " src="assets/board.png" alt="">
-                            <h1 class="pt-9">Discover Something <br> New Today!</h1>
-                        </div>
-                        </div>
-                    <!-- card-3 -->
-
-
-                    <div id="dateButton" class="flex cursor-pointer pt-10 gap-3 bg-gray-400 col-span-3 rounded-lg">
-                        <div class="mx-auto flex gap-3 p-10 rounded-lg">
-                        <img class="w-10 h-10 bg-white " src="assets/calender.png" alt="">
-                            <h1>Wed ,<br>
-                                Jul 28 2025 <br></h1>
-                        </div>
-                        </div>
-                </div>
-                <div class="grid grid-cols-3 pt-14  gap-7">
-                    <!-- card-box-1 -->
-                    <div class="bg-gray-300 rounded-lg">
-                    <div class="pt-3 pl-4">
-                        <h4 class="text-black pl-5 pt-2 bg-white rounded-md w-36 h-10">ShopEase</h4>
-                    </div>
-                    <h1 id="fix-mobile" class="pl-5 pt-4">Fix Mobile Button Issue</h1>
-                    <div class="pt-3 pl-4 pr-6">
-                        <p class="pl-5 pt-4 bg-white rounded-md">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                        and ensure onClick works properly</p>
-                    </div>
-                    <p class="pl-5 pt-4">Deadline</p>
-                    <div class="flex gap-52 pb-4 pl-3  pr-4 pt-4">
-                        <h2 class="pl-2 ">21 March 2025</h2>
-                    <button id="mainButton" class="btn btn-primary ">Completed</button>
-                    </div>
-                    </div>
-                    <!-- card-box-2 -->
-                    <div class="bg-gray-300 rounded-lg">
-                    <div class="pt-3 pl-4">
-                        <h4 class="text-black pl-5 pt-2 bg-white rounded-md w-36 h-10">SwiftPay</h4>
-                    </div>
-                    <h1 class="pl-5 pt-4">Optimize  Home page</h1>
-                    <div class="pt-3 pl-4 pr-6">
-                        <p class="pl-5 pt-4 bg-white rounded-md">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                        and ensure onClick wo</p>
-                    </div>
-                    <p class="pl-5 pt-4">Deadline</p>
-                    <div class="flex gap-52 pb-4 pl-5 pt-4 pr-4">
-                        <h2 class=" ">21 March 2025</h2>
-                    <button id="mainButton1" class="btn btn-primary ">Completed</button>
-                    </div>
-                    </div>
-                    <!-- card-box-3 -->
-                    <div class="bg-gray-300 rounded-lg">
-                    <div class="pt-3 pl-4">
-                        <h4 class="text-black pl-5 pt-2 bg-white rounded-md w-36 h-10">Meta</h4>
-                    </div>
-                    <h1 class="pl-5 pt-4">Add new emoji 🤲</h1>
-                    <div class="pt-3 pl-4 pr-6">
-                        <p class="pl-5 pt-4 bg-white rounded-md">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
-                    </div>
-                    <p class="pl-5 pt-4">Deadline</p>
-                    <div class="flex gap-52 pb-4 pl-5 pt-4 pr-4">
-                        <h2 class=" ">21 March 2025</h2>
-                    <button id="mainButton2" class="btn btn-primary ">Completed</button>
-                    </div>
-                    </div>
-                    <!-- card-box-4 -->
-                    <div class="bg-gray-300 rounded-lg">
-                    <div class="pt-3 pl-4 ">
-                        <h4 class="text-black pl-5 pt-2 bg-white rounded-md w-36 h-8">Google LLC</h4>
-                    </div>
-                    <h1 class="pl-5 pt-4">Integrate OpenAI API </h1>
-                    <div class="pt-3 pl-4 pr-6">
-                        <p class="pl-5 pt-4 bg-white rounded-md">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
-                    </div>
-                    <p class="pl-5 pt-4">Deadline</p>
-                    <div class="flex gap-52 pb-4 pl-5 pt-4 pr-4">
-                        <h2 class=" ">21 March 2025</h2>
-                    <button id="mainButton3" class="btn btn-primary ">Completed</button>
-                    </div>
-                    </div>
-                    <!-- card-box-5 -->
-                    <div class="bg-gray-300 rounded-lg">
-                    <div  class="pt-3 pl-4 ">
-                        <h4 class="text-black pl-5 pt-2 bg-white rounded-md w-36 h-10">Google LLC</h4>
-                    </div>
-                    <h1 class="pl-5 pt-4">Integrate OpenAI API </h1>
-                    <div  class="pt-3 pl-4 pr-6">
-                        <p class="pl-5 pt-4 bg-white rounded-md">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
-                    </div>
-                    <p class="pl-5 pt-4">Deadline</p>
-                    <div class="flex gap-52 pb-4 pl-5 pt-4 pr-4">
-                        <h2 class=" ">21 March 2025</h2>
-                    <button id="mainButton4" class="btn btn-primary ">Completed</button>
-                    </div>
-                    </div>
-                    <!-- card-box-6 -->
-                    <div class="bg-gray-300 rounded-lg">
-                    <div class="pt-3 pl-4 ">
-                        <h4 class="text-black pl-5 pt-2 bg-white rounded-md w-36 h-10">Glassdoar</h4>
-                    </div>
-                    <h1 class="pl-5 pt-4">Improve Job searching</h1>
-                    <div class="pt-3 pl-4 pr-6">
-                        <p class="pl-5 pt-4 bg-white rounded-md">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
-                    </div>
-                    <p class="pl-5 pt-4">Deadline</p>
-                    <div class="flex gap-52 pb-4 pl-5 pt-4 pr-4">
-                        <h2 class=" ">21 March 2025</h2>
-                    <button id="mainButton5" class="btn btn-primary ">Completed</button>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Active box --> 
-            <div id="right-btn" class="grid  shadow-lg bg-slate-50 w-7/12 text-center ">
-                <div>
-                    <div class="pt-10">
-                        <div class="flex ">
-                        <div class="mx-auto flex gap-3 pb-4">
-                            <img src="assets/activity.png" alt="">
-                        
-                        <h2 id="active-logs">Activity Log</h2>
-                    </div>
-                        </div>
-                        <button class="btn btn-primary border-b-2" >Clear History</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
     <script src="script/script.js"></script>
     <script src="script/button.js"></script>
-    
 </body>
 </html>
+
+
+
+
